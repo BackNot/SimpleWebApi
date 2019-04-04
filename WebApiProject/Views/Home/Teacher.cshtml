@@ -1,0 +1,89 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-12">Please choose an operation.</div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-4"><input type="button" id="getall-operation" class="btn btn-sm btn-warning" value="GET" /></div>
+        <div class="col-md-4 text-right">Format: <select id="formatter"><option selected>JSON</option><option>XML</option></select></div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-4">
+            <input type="button" id="get-operation" class="btn btn-sm btn-warning" value="GET BY ID" />
+            <div class="get-hidden">
+                <input type="text" id="get-id-operation" placeholder="teacher number..." />
+                <input type="button" id="get-id-button" class="btn btn-sm btn-success" value="OK" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-md-4"><input type="button" id="post-operation" class="btn btn-sm btn-warning" value="POST" /></div>
+
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-4">
+            <input type="button" id="delete-operation" class="btn btn-sm btn-warning" value="DELETE BY ID" />
+            <div class="delete-hidden">
+                <input type="text" id="delete-id-operation" placeholder="teacher number..." />
+                <input type="button" id="delete-id-button" class="btn btn-sm btn-success" value="OK" />
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-offset-3 col-md-3  text-center post-form-container">
+            <span class="lead">Form:</span>
+            <form id="post-form">
+                <!-- FOR POST/PUT  OPERATION-->
+                <label>Faculty Number:</label><input type="text" name="TeacherNumber" id="faculty-number" class="form-control" />
+                <label>First Name:</label><input type="text" name="FirstName" id="first-name" class="form-control" />
+                <label>Last Name:</label><input type="text" name="LastName" id="last-name" class="form-control" />
+                <label>Discipline:</label><input type="text" name="Discipline" id="discipline" class="form-control" />
+                <input type="submit" id="submit-form-btn" />
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            Raw result:<br />
+            <textarea id="result" rows="4" cols="100" disabled></textarea>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/teacher.js"></script>
+
+<!-- Bootstrap - Modal -->
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Authentication</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <!-- login form-->
+                <div class="login-form">
+                    Please enter your credentials:
+                    <div class="container d-flex flex-column align-items-center justify-content-center">
+                        <form class="mt-5">
+                            <input type="text" placeholder="username" id="username" class="form-control" /><br />
+                            <input type="password" placeholder="password" id="password" class="form-control" />
+                            <input type="submit" value="OK" id="submit" class="btn btn-block btn-primary mt-2" /><br />
+                            <div class="modal-footer">
+                            <span class="text-muted text-small">Note: To receive access enter user: root password: root</span>
+                                </div>
+                        </form>
+
+                    </div>
+                </div> <!-- end login form-->
+
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End modal-->

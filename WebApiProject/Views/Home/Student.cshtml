@@ -1,0 +1,53 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-12">Please choose an operation.</div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-4"><input type="button" id="getall-operation" class="btn btn-sm btn-warning" value="GET" /></div>
+        <div class="col-md-4 text-right">Format: <select id="formatter"><option selected>JSON</option><option>XML</option></select></div>
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-4">
+            <input type="button" id="get-operation" class="btn btn-sm btn-warning" value="GET BY ID" />
+            <div class="get-hidden">
+                <input type="text" id="get-id-operation" placeholder="faculty number..." />
+                <input type="button" id="get-id-button" class="btn btn-sm btn-success" value="OK" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-md-4"><input type="button" id="post-operation" class="btn btn-sm btn-warning" value="POST" /></div>
+
+    </div>
+    <div class="row mt-2">
+        <div class="col-md-4">
+            <input type="button" id="delete-operation" class="btn btn-sm btn-warning" value="DELETE BY ID" />
+            <div class="delete-hidden">
+                <input type="text" id="delete-id-operation" placeholder="faculty number..." />
+                <input type="button" id="delete-id-button" class="btn btn-sm btn-success" value="OK" />
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-offset-3 col-md-3  text-center post-form-container">
+            <span class="lead">Form:</span>
+            <form id="post-form">
+                <!-- FOR POST/PUT  OPERATION-->
+                <label>Faculty Number:</label><input type="text" name="FacultyNumber" id="faculty-number" class="form-control" />
+                <label>First Name:</label><input type="text" name="FirstName" id="first-name" class="form-control" />
+                <label>Last Name:</label><input type="text" name="LastName" id="last-name" class="form-control" />
+                <label>Discipline:</label><input type="text" name="Discipline" id="discipline" class="form-control" />
+                <input type="submit" id="submit-form-btn" />
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            Raw result:<br />
+            <textarea id="result" rows="4" cols="100" disabled></textarea>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/student.js"></script>
