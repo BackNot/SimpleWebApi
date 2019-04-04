@@ -20,10 +20,11 @@ You can make GET request with specific ID:
 In the 'RAW result' block the jqXHR object will set the status code and text returned from the WebApi.
 
 By clicking 'POST' button a form is shown:
-![POST]https://github.com/BackNot/SimpleWebApi/blob/master/PicturesOfProject/POST2.png)
+![POST](https://github.com/BackNot/SimpleWebApi/blob/master/PicturesOfProject/POST2.png)
 
 
 When you submit it a javascript alert is shown:
+
 ![POST](https://github.com/BackNot/SimpleWebApi/blob/master/PicturesOfProject/DonePOST.png)
 
 
