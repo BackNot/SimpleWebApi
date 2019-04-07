@@ -36,4 +36,4 @@ When we make 'GET' request again you will see the new record:
 
 When you click the "Teachers" tab you are asked to authenticate youtself. (I've impemented basic authentication).
 After that,  you can do the same operations that you did , but this time for the teachers.
-
+![Login](https://github.com/BackNot/SimpleWebApi/blob/master/PicturesOfProject/auth.png)
