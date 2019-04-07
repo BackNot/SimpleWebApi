@@ -1,6 +1,7 @@
 # SimpleWebApi
 It's just simple WebApi with some operations.
 I've used jQuery to make ajax requests.
+Note: No databases are used.
 
 Index:
 ![Index](https://github.com/BackNot/SimpleWebApi/blob/master/PicturesOfProject/index.png)
@@ -32,4 +33,7 @@ When we make 'GET' request again you will see the new record:
 ![GET](https://github.com/BackNot/SimpleWebApi/blob/master/PicturesOfProject/GETJSON3.png)
 
 
+
+When you click the "Teachers" tab you are asked to authenticate youtself. (I've impemented basic authentication).
+After that,  you can do the same operations that you did , but this time for the teachers.
 
